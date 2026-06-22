@@ -1,6 +1,6 @@
 /*
  AppDelegate.swift
- Menubar RunCat
+ SDisplay
 
  Created by Takuto Nakamura on 2019/08/06.
  Copyright © 2019 Takuto Nakamura. All rights reserved.
@@ -70,10 +70,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
                      action: #selector(toggleShowUsage(_:)),
                      keyEquivalent: "")
         menu.addItem(NSMenuItem.separator())
-        menu.addItem(withTitle: "About Menubar RunCat",
+        menu.addItem(withTitle: "About SDisplay",
                      action: #selector(openAbout(_:)),
                      keyEquivalent: "")
-        menu.addItem(withTitle: "Quit Menubar RunCat",
+        menu.addItem(withTitle: "Quit SDisplay",
                      action: #selector(terminateApp(_:)),
                      keyEquivalent: "")
         statusItem.menu = menu

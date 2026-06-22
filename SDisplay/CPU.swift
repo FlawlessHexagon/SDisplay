@@ -1,6 +1,6 @@
 /*
  CPU.swift
- Menubar RunCat
+ SDisplay
 
  Created by Takuto Nakamura on 2019/08/06.
  Copyright © 2019 Takuto Nakamura. All rights reserved.

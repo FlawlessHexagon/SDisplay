@@ -1,29 +1,20 @@
-# menubar_runcat
+# SDisplay
 
-<!-- # Short Description -->
+SDisplay is a lightweight macOS application that visualizes your system's CPU usage through a dynamic animation. The animation speed of the displayed character scales proportionally with your current CPU load.
 
-A cute Running Cat animation on your MacBook menubar.
+## Concept and Vision
 
-This project is a reduced version of RunCat.app (App Store).
+SDisplay breaks free from being just a macOS menu bar utility. It is designed to be a versatile, free-floating widget that can be placed anywhere on your screen. 
 
-<!-- # Badges -->
+While you can still choose to dock it in the menu bar as a traditional status item, you now have the complete freedom to position it statically anywhere on your desktop. This allows you to integrate the CPU visualization into your personal workspace setup exactly how you want it.
 
-[![Github issues](https://img.shields.io/github/issues/Kyome22/menubar_runcat)](https://github.com/Kyome22/menubar_runcat/issues)
-[![Github forks](https://img.shields.io/github/forks/Kyome22/menubar_runcat)](https://github.com/Kyome22/menubar_runcat/network/members)
-[![Github stars](https://img.shields.io/github/stars/Kyome22/menubar_runcat)](https://github.com/Kyome22/menubar_runcat/stargazers)
-[![Github top language](https://img.shields.io/github/languages/top/Kyome22/menubar_runcat)](https://github.com/Kyome22/menubar_runcat/)
-[![Github license](https://img.shields.io/github/license/Kyome22/menubar_runcat)](https://github.com/Kyome22/menubar_runcat/)
+### Key Features
 
-# Tags
+- **Freely Positionable**: Move and place the display at any static location on your desktop screen.
+- **Menu Bar Option**: Optionally dock the application in the macOS menu bar for a more traditional experience.
+- **Dynamic Hardware Feedback**: The animation speed provides an immediate, intuitive visual representation of your system's CPU load.
+- **Lightweight**: Built purely with Swift and AppKit, ensuring minimal system overhead and battery consumption.
 
-`Swift` `Cat` `menubar`
+## Technical Details
 
-# Demo
-
-![Demo](resources/demo.gif)
-
-# Contributors
-
-- [Kyome22](https://github.com/Kyome22)
-
-<!-- CREATED_BY_LEADYOU_README_GENERATOR -->
+SDisplay leverages low-level Darwin Mach APIs to accurately monitor system CPU ticks in the background. It calculates the delta between system, user, and idle states to determine the precise CPU load, which directly controls the frame interval of the animation.

@@ -1,6 +1,6 @@
 /*
  main.swift
- Menubar RunCat
+ SDisplay
 
  Created by Takuto Nakamura on 2023/05/19.
  Copyright © 2023 Takuto Nakamura. All rights reserved.
